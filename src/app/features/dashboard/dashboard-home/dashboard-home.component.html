@@ -10,6 +10,17 @@
     <div class="container" fxLayout="row" fxLayoutAlign="center none">
       <div fxFlex="50%" class="text-center no-records animate">
         <mat-icon>dashboard</mat-icon>
+        <mat-card>
+          <a [routerLink]="['/github']">
+            <button mat-raised-button color="accent" class="dash-btn">Github Repositoris</button>
+          </a>
+          <a [routerLink]="['/chains']">
+            <button mat-raised-button color="accent" class="dash-btn">Blockcore Chains</button>
+          </a>
+          <a [routerLink]="['/indexers']">
+            <button mat-raised-button color="accent" class="dash-btn">Blockcore Indexers</button>
+          </a>
+        </mat-card>
       </div>
       <mat-icon> </mat-icon>
     </div>
