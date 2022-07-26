@@ -17,12 +17,15 @@ a:active {
   color: blue;
 }
 
-
+.mat-card-avatar{
+  width: auto !important;
+}
 
 .flex-container {
+  margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
 }
 
 .flex-item {
@@ -34,3 +37,10 @@ a:active {
     flex: 100%;
   }
 }
+
+ .gitlogo{
+  position :absolute;
+  top: -15px;
+  right: 10px;
+ }
+ 

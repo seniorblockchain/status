@@ -1,5 +1,7 @@
+
+
+
 <div *ngFor="let org of setup.github.organizations" class="mb-10">
-  
     <mat-card class="mb-10">
       <mat-card-header>
         <img mat-card-avatar src="{{org.avatarUrl}}" alt="{{org.name}}">
@@ -12,25 +14,30 @@
           {{org.description}}
         </p>
       </mat-card-content>
-      <mat-card-actions align="end">
-        <button mat-button color="accent">open in github</button>
+      <mat-card-actions align="end" class="gitlogo">
+        <ng-lottie width="90px" height="90px" [options]="options" (animationCreated)="animationCreated($event)"></ng-lottie>
       </mat-card-actions>
     </mat-card>
  
   <div class="flex-container">
+
     <mat-card *ngFor="let repo of org.repositoris" class="flex-item">
+      
+      <mat-card-header>
+        <!-- <img mat-card-avatar src="assets/images/github.png" alt="{{org.name}}"> -->
+        <ng-lottie mat-card-avatar width="60px" height="60px" [options]="options" (animationCreated)="animationCreated($event)"></ng-lottie>
       <mat-card-title> {{repo.name}}</mat-card-title>
       <mat-card-subtitle> <span *ngIf="repo.release.exist">version : <a
             [href]="'https://github.com/'+org.login+'/'+repo.name+'/releases'">{{repo.release.version}}</a></span>
       </mat-card-subtitle>
+      </mat-card-header>
       <mat-card-content>
         <p>
           {{repo.description}}
         </p>
       </mat-card-content>
-      <mat-card-actions align="end">
-        <button mat-button=""> open in github</button>
-      </mat-card-actions>
     </mat-card>
   </div>
 </div>
+
+ 
