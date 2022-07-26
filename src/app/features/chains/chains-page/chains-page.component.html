@@ -2,7 +2,7 @@
     <mat-card *ngFor="let chain of setup.chains" class="flex-item">
       <mat-card-header>
         <img mat-card-avatar src="{{chain.icon}}" alt="{{chain.name}}">
-        <mat-card-title>{{chain.name}}</mat-card-title>
+        <mat-card-title class="pointer" (click)="openDialog(chain.symbol)">{{chain.name}}</mat-card-title>
         <mat-card-subtitle>{{chain.symbol}}</mat-card-subtitle>
       </mat-card-header>
     </mat-card>

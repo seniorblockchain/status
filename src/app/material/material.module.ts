@@ -44,7 +44,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatAutocompleteModule, MatTableModule, MatDialogModule, MatTabsModule,
     MatTooltipModule, MatSelectModule, MatPaginatorModule, MatChipsModule,
     MatButtonToggleModule, MatSlideToggleModule, MatBadgeModule, MatCheckboxModule,
-    MatExpansionModule, DragDropModule, MatSortModule,MatGridListModule
+    MatExpansionModule, DragDropModule, MatSortModule,MatGridListModule,MatFormFieldModule
   ],
   exports: [
     CommonModule,
@@ -54,7 +54,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatAutocompleteModule, MatTableModule, MatDialogModule, MatTabsModule,
     MatTooltipModule, MatSelectModule, MatPaginatorModule, MatChipsModule,
     MatButtonToggleModule, MatSlideToggleModule, MatBadgeModule, MatCheckboxModule,
-    MatExpansionModule, DragDropModule, MatSortModule,MatGridListModule
+    MatExpansionModule, DragDropModule, MatSortModule,MatGridListModule,MatFormFieldModule
   ],
   providers: [
   ],
