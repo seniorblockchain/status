@@ -5,6 +5,7 @@ import { Subscription } from 'rxjs';
 
 import { SpinnerService } from '../../core/services/spinner.service';
 import { ThemeService } from 'src/app/core/services/theme.service';
+import { DisableRightClickService } from 'src/app/core/services/disable-right-click.service';
 
 @Component({
     selector: 'app-layout',
@@ -24,19 +25,18 @@ export class LayoutComponent implements OnInit, OnDestroy, AfterViewInit {
     constructor(private changeDetectorRef: ChangeDetectorRef,
         private media: MediaMatcher,
         public spinnerService: SpinnerService,
-        public theme: ThemeService,) {
+        public theme: ThemeService,
+        private rightClickDisable: DisableRightClickService) {
 
         this.mobileQuery = this.media.matchMedia('(max-width: 1000px)');
         this._mobileQueryListener = () => changeDetectorRef.detectChanges();
         // tslint:disable-next-line: deprecation
         this.mobileQuery.addListener(this._mobileQueryListener);
+        this.rightClickDisable.disableRightClick();
     }
 
     ngOnInit(): void {
         this.theme.init();
-
-
-
     }
 
     ngOnDestroy(): void {
