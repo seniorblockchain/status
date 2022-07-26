@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1658850179014,
+  "timestamp": 1658858962734,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,17 +11,18 @@
         "ignoreVary": true
       },
       "urls": [
-        "/303.784cde0b0a1561f4.js",
+        "/303.9bd83b2acea062fa.js",
         "/392.cb1c2b4c0480eab7.js",
-        "/620.82a605669772bbe2.js",
-        "/699.1a443c002982f9dc.js",
+        "/603.8a5a381803e0b33e.js",
+        "/620.16cc0feedd03f3ac.js",
+        "/699.7c470a8c066755c3.js",
         "/860.d1d40cef512bd6d8.js",
-        "/949.a8e3d68bc114ce88.js",
+        "/949.77152b611d0c43a8.js",
         "/index.html",
-        "/main.f7207e910f9402ae.js",
+        "/main.64250c16ec8074b6.js",
         "/manifest.webmanifest",
         "/polyfills.27697133c843ef8c.js",
-        "/runtime.0f7b8176a7a08710.js",
+        "/runtime.e2f7662823f54b0e.js",
         "/styles.967db30135f46b63.css"
       ],
       "patterns": []
@@ -34,6 +35,7 @@
         "ignoreVary": true
       },
       "urls": [
+        "/assets/animations/github.json",
         "/assets/favicon/android-chrome-192x192.png",
         "/assets/favicon/android-chrome-512x512.png",
         "/assets/favicon/apple-touch-icon.png",
@@ -56,6 +58,7 @@
         "/assets/icons/icon-48x48.png",
         "/assets/icons/icon-512x512.png",
         "/assets/icons/icon-light-128x128.png",
+        "/assets/images/github.png",
         "/assets/images/user.png",
         "/material-icons-base-400-normal.6a5d2b3f2786b8b0.woff",
         "/material-icons-base-400-normal.a987d1598549506d.woff2"
@@ -65,12 +68,14 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/303.784cde0b0a1561f4.js": "228cc623b8d63c16b147cdd96189630563b6ace9",
+    "/303.9bd83b2acea062fa.js": "f9f56a0865f1a5097b400ee74e3d454f1d264906",
     "/392.cb1c2b4c0480eab7.js": "c932495f1d28ea42f70634a2634f5ef0906178a8",
-    "/620.82a605669772bbe2.js": "33c865657051bb97ce897ad81c9b09136d34015f",
-    "/699.1a443c002982f9dc.js": "afc1f28bc032c47b1c27bf45eb006a89136ad292",
+    "/603.8a5a381803e0b33e.js": "95a04b015f9a1e9757449adcf6b60491eaa8117f",
+    "/620.16cc0feedd03f3ac.js": "9b12bf47088b387c1b436f0e79e70671fe1b6ef0",
+    "/699.7c470a8c066755c3.js": "983aee6590506230f6a70c4d99833bc5dc95fe03",
     "/860.d1d40cef512bd6d8.js": "0c88e2bdc3f1305439fe0560bc7c3e3f2ba8e1f6",
-    "/949.a8e3d68bc114ce88.js": "0c636ebef68940fa546d0b7cd6979e5cfd31aaaa",
+    "/949.77152b611d0c43a8.js": "a0a90410da720242c33d22891612eab11baac489",
+    "/assets/animations/github.json": "9716f459535fa5e3877c07ab7f6224a07e30939e",
     "/assets/favicon/android-chrome-192x192.png": "858678b619246ad473332fcb824c6d74bf23e7fd",
     "/assets/favicon/android-chrome-512x512.png": "fe6b34ee415f532f7a7a7191208b1c4fa5346241",
     "/assets/favicon/apple-touch-icon.png": "8fc77af20fa0ad6bda2fa586f8ab0f13b6a33be2",
@@ -93,14 +98,15 @@
     "/assets/icons/icon-48x48.png": "926fb2e6f995a5cb0e2934320d9064aabc6bc689",
     "/assets/icons/icon-512x512.png": "04d9c51051b8b90b7b634aeaa1d05f13c46e983d",
     "/assets/icons/icon-light-128x128.png": "ca69f8755cc22d8cc02661c58c0a5f6c3507d840",
+    "/assets/images/github.png": "4fe0da9bce8123038eeea4b040a3975ba546999f",
     "/assets/images/user.png": "9ecc8b2915de07bdd0a0b50dece3f397d8fc8a17",
-    "/index.html": "a8aa837d0ec18b5a1eb6c3eb08b6940f0851c6cf",
-    "/main.f7207e910f9402ae.js": "359be1e5d8261d8f582dc387764106fb31fe0924",
+    "/index.html": "f9e2b9a080937af7394b7bb2d8c4f78cb8a8e52d",
+    "/main.64250c16ec8074b6.js": "5ca222b0b6cc5b19c9af2fe337b97de8e74986b3",
     "/manifest.webmanifest": "56384a1e75005fea501825dc1694c913bc7ebee7",
     "/material-icons-base-400-normal.6a5d2b3f2786b8b0.woff": "6e4299698a545c9cf5798fdbb3dd2e0350b41ae4",
     "/material-icons-base-400-normal.a987d1598549506d.woff2": "c8de67e55036ce9ed7844c9a010a0c4cd5dfc54b",
     "/polyfills.27697133c843ef8c.js": "82d343ca7abf6308d3edae710bffb62e9677a09f",
-    "/runtime.0f7b8176a7a08710.js": "3c639c91a4266d597462f6b6598a3aa05dd2a219",
+    "/runtime.e2f7662823f54b0e.js": "1a8ccba9cc24bd5411bc44fc003ac8ae921cfff6",
     "/styles.967db30135f46b63.css": "d7763be3bdb6545dc70684d317baf31c09122fd9"
   },
   "navigationUrls": [
