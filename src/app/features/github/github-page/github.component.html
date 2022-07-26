@@ -1,12 +1,42 @@
 <div *ngFor="let org of setup.github.organizations" class="mb-10">
 
   <mat-card class="mb-10">
-    <h2 class="mat-h2">{{org.name}}</h2>
+    <mat-card-header>
+      <img mat-card-avatar src="{{org.avatarUrl}}" alt="{{org.name}}">
+      
+      <mat-card-title>{{org.name}}</mat-card-title>
+      <mat-card-subtitle>{{org.blog}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{org.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-button>open in github</button>
+    </mat-card-actions>
   </mat-card>
 
-  <mat-card *ngFor="let repo of org.repositoris" class="mb-10 ml-10">
-    <h4 class="mat-h4">{{repo.name}}<span *ngIf="repo.release.exist"> => version : <a [href]="'https://github.com/'+org.name+'/'+repo.name+'/releases'">{{repo.release.version}}</a></span></h4>
-  </mat-card>
+
+
+
+ 
+    <mat-card *ngFor="let repo of org.repositoris" class="mb-10 ml-10">
+      <mat-card-title> {{repo.name}}</mat-card-title>
+      <mat-card-subtitle> <span *ngIf="repo.release.exist">version : <a [href]="'https://github.com/'+org.name+'/'+repo.name+'/releases'">{{repo.release.version}}</a></span></mat-card-subtitle>
+      <mat-card-content>
+        <p>
+          {{repo.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions align="end">
+       <button mat-button=""> open in github</button>
+      </mat-card-actions>
+    </mat-card>
 
 </div>
-<br>
+
+
+
+
+
