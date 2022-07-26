@@ -1,0 +1,48 @@
+{
+  "organizations": [
+    {
+      "name": "block-core",
+      "repositoris": [
+        {
+          "name": "blockcore",
+          "description": "Open source .NET Core Bitcoin based blockchain node in C#",
+          "release": {
+            "exist": true,
+            "version": "1.0.34",
+            "prerelease": false
+          }
+        }
+        ,
+        {
+          "name": "blockcore-wallet",
+          "description": "Wallet for your coins, tokens, identities, NFTs and more.",
+          "release": {
+            "exist": true,
+            "version": "0.0.51",
+            "prerelease": true
+          }
+        }
+        ,
+        {
+          "name": "blockcore-explorer",
+          "description": "Cross-Chain Multi-Chain Block Explorer",
+          "release": {
+            "exist": true,
+            "version": "0.2.26",
+            "prerelease": false
+          }
+        }
+        ,
+        {
+          "name": "blockcore-coininfo",
+          "description": "JavaScript component for crypto currency specific information.",
+          "release": {
+            "exist": true,
+            "version": "5.2.2",
+            "prerelease": false
+          }
+        }
+      ]
+    }
+  ]
+}
