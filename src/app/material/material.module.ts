@@ -32,21 +32,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { SelectCheckAllComponent } from './select-check-all/select-check-all.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { MAT_DATE_FORMATS } from '@angular/material/core';
-
-export const MY_FORMATS = {
-  parse: {
-    dateInput: 'DD MMM YYYY',
-  },
-  display: {
-    dateInput: 'DD MMM YYYY',
-    monthYearLabel: 'MMM YYYY',
-    dateA11yLabel: 'LL',
-    monthYearA11yLabel: 'MMMM YYYY'
-  }
-};
 
 @NgModule({
   imports: [
@@ -58,7 +44,7 @@ export const MY_FORMATS = {
     MatAutocompleteModule, MatTableModule, MatDialogModule, MatTabsModule,
     MatTooltipModule, MatSelectModule, MatPaginatorModule, MatChipsModule,
     MatButtonToggleModule, MatSlideToggleModule, MatBadgeModule, MatCheckboxModule,
-    MatExpansionModule, DragDropModule, MatSortModule
+    MatExpansionModule, DragDropModule, MatSortModule,MatGridListModule
   ],
   exports: [
     CommonModule,
@@ -68,21 +54,16 @@ export const MY_FORMATS = {
     MatAutocompleteModule, MatTableModule, MatDialogModule, MatTabsModule,
     MatTooltipModule, MatSelectModule, MatPaginatorModule, MatChipsModule,
     MatButtonToggleModule, MatSlideToggleModule, MatBadgeModule, MatCheckboxModule,
-    MatExpansionModule, SelectCheckAllComponent, DragDropModule, MatSortModule
+    MatExpansionModule, DragDropModule, MatSortModule,MatGridListModule
   ],
   providers: [
-    {
-      provide: MAT_DATE_FORMATS,
-      useValue: MY_FORMATS
-    },
-    { provide: LOCALE_ID, useValue: 'en-gb' }
   ],
-  declarations: [SelectCheckAllComponent]
+  declarations: []
 })
-export class CustomMaterialModule {
+export class MaterialModule {
   static forRoot() {
     return {
-      ngModule: CustomMaterialModule,
+      ngModule: MaterialModule,
       providers: [
       ]
     };
