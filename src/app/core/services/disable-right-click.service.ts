@@ -5,10 +5,13 @@ import { Inject, Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class DisableRightClickService {
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(@Inject(DOCUMENT) private document: Document) { }
   disableRightClick() {
-    this.document.addEventListener('contextmenu', (event) =>
-      event.preventDefault()
-    );
+      this.document.addEventListener("contextmenu", (event) => {
+          var element = event.target as HTMLElement;
+          if (element.tagName != "INPUT" && element.tagName != "TEXTAREA") {
+            event.preventDefault();
+          }
+      }, false);
   }
 }

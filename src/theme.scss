@@ -147,5 +147,19 @@ $dark-theme: mat-dark-theme(
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  user-drag: none;
+}
+
+textarea,
+input {
+  -webkit-app-region: drag;
+  -webkit-touch-callout: default;
+  -webkit-user-select: default;
+  -khtml-user-select: default;
+  -moz-user-select: default;
+  -ms-user-select: default;
+  -webkit-user-drag: default;
+  -khtml-user-drag: default;
+  -moz-user-drag: default;
+  -o-user-drag: default;
+  user-select: default;
 }
