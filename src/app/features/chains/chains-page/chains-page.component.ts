@@ -1,6 +1,6 @@
 /* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
 import { ApiService } from 'src/app/core/services/api.service';
 import { SetupService } from 'src/app/core/services/setup.service';
 import { NetworkDialogComponent } from './network-dialog.component';
