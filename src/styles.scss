@@ -5,6 +5,21 @@
 
 @include angular-material-theme($theming-material-components-theme);
 
+
+
+// Define your primary, accent, and warn colors
+$primary: mat-palette($mat-indigo);
+$accent: mat-palette($mat-pink, A200, A100, A400);
+$warn: mat-palette($mat-red);
+
+// Create a theme map
+$theme: mat-light-theme($primary, $accent, $warn);
+
+// Include typography and density configurations if needed
+
+// Apply the theme to your application
+@include angular-material-theme($theme);
+
 .dark {
   @include angular-material-color($dark-theme);
 }

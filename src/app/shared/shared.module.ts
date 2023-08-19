@@ -1,15 +1,15 @@
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { MaterialModule } from '../material/material.module';
-import { LimitToPipe } from './pipes/limit-to.pipe';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { ContentPlaceholderAnimationComponent } from './content-placeholder-animation/content-placeholder-animation.component';
-import { LocalDatePipe } from './pipes/local-date.pipe';
-import { YesNoPipe } from './pipes/yes-no.pipe';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutComponent } from './layout/layout.component';
+import { LimitToPipe } from './pipes/limit-to.pipe';
+import { LocalDatePipe } from './pipes/local-date.pipe';
+import { MaterialModule } from '../material/material.module';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { YesNoPipe } from './pipes/yes-no.pipe';
 
 @NgModule({
   imports: [
@@ -37,9 +37,6 @@ import { LayoutComponent } from './layout/layout.component';
     ContentPlaceholderAnimationComponent,
     LocalDatePipe,
     YesNoPipe
-  ],
-  entryComponents: [
-    ConfirmDialogComponent
-  ]
+  ] 
 })
 export class SharedModule { }

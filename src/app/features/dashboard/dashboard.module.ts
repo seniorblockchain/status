@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 import { LottieModule } from 'ngx-lottie';
+import { NgModule } from '@angular/core';
+import { SharedModule } from 'src/app/shared/shared.module';
 import player from 'lottie-web';
 
 @NgModule({
@@ -14,8 +13,7 @@ import player from 'lottie-web';
     LottieModule.forRoot({ player: playerFactory }),
     DashboardRoutingModule,
     SharedModule
-  ],
-  entryComponents: []
+  ]
 })
 export class DashboardModule { }
 export function playerFactory() {
