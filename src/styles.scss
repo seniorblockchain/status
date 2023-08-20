@@ -1,24 +1,22 @@
-@import "@fontsource/material-icons";
-@import '@angular/material/theming';
+@import "@angular/material/theming";
+
 @include mat-core();
+
 @import "./theme.scss";
 
+@import "./custom-component-themes.scss";
+
 @include angular-material-theme($theming-material-components-theme);
+@include custom-components-theme($theming-material-components-theme);
 
+@import "@fontsource/roboto/300.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css"; // default "bold".
 
+@import "@fontsource/material-icons-round";
 
-// Define your primary, accent, and warn colors
-$primary: mat-palette($mat-indigo);
-$accent: mat-palette($mat-pink, A200, A100, A400);
-$warn: mat-palette($mat-red);
-
-// Create a theme map
-$theme: mat-light-theme($primary, $accent, $warn);
-
-// Include typography and density configurations if needed
-
-// Apply the theme to your application
-@include angular-material-theme($theme);
+@include angular-material-theme($theming-material-components-theme);
 
 .dark {
   @include angular-material-color($dark-theme);
@@ -28,7 +26,13 @@ $theme: mat-light-theme($primary, $accent, $warn);
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 14px;
+  background-color: #303030;
+  color: white;
+  overscroll-behavior-y: contain;
+}
+
+.mat-icon {
+  font-family: "Material Icons Round", sans-serif;
 }
 
 .full-width {

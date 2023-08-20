@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { SetupService } from 'src/app/core/services/setup.service';
+
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
+import { SetupService } from 'src/app/core/services/setup.service';
 
 @Component({
   selector: 'app-github',
@@ -18,12 +19,7 @@ export class GithubPageComponent implements OnInit {
   }
 
 
-  options: AnimationOptions = {
-    path: '/assets/animations/github.json',
-  };
-
-  animationCreated(animationItem: AnimationItem): void {
-  }
+ 
   // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit() {
   }
