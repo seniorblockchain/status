@@ -13,7 +13,7 @@
           "description": "Open source .NET Core Bitcoin based blockchain node in C#",
           "release": {
             "exist": true,
-            "version": "1.0.34",
+            "version": "1.0.40",
             "prerelease": false
           }
         },
@@ -22,8 +22,8 @@
           "description": "Wallet for your coins, tokens, identities, NFTs and more.",
           "release": {
             "exist": true,
-            "version": "0.0.51",
-            "prerelease": true
+            "version": "1.0.32",
+            "prerelease": false
           }
         },
         {
@@ -31,7 +31,7 @@
           "description": "Cross-Chain Multi-Chain Block Explorer",
           "release": {
             "exist": true,
-            "version": "0.2.26",
+            "version": "0.2.28",
             "prerelease": false
           }
         },
@@ -42,6 +42,15 @@
             "exist": true,
             "version": "5.2.2",
             "prerelease": false
+          }
+          ,
+        {
+          "name": "blockcore-notes",
+          "description": "Notes app for decentralized infrastructures (Nostr and Web5)",
+          "release": {
+            "exist": true,
+            "version": "0.0.0",
+            "prerelease": true
           }
         }
       ]
