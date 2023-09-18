@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1694744292334,
+  "timestamp": 1695025261935,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,17 +12,17 @@
       },
       "urls": [
         "/237.c79080eac29ca61b.js",
-        "/288.18569e4e2004ef27.js",
         "/393.c367bf27e6db5a8f.js",
         "/449.1ef1d402f037abae.js",
-        "/695.67942f58e363f2e5.js",
+        "/695.9023f7fe9f487ff5.js",
         "/799.295f169e12a3dcc8.js",
+        "/811.d2956d1291009732.js",
         "/index.html",
-        "/main.6fa3210d2537af48.js",
+        "/main.2bc0b6014628c196.js",
         "/manifest.webmanifest",
         "/polyfills.184e93cf20357af2.js",
-        "/runtime.d68536a1ecc00cc3.js",
-        "/styles.2202976f7a99bc18.css"
+        "/runtime.b963e1ac1efde3c0.js",
+        "/styles.83d998932747ac9a.css"
       ],
       "patterns": []
     },
@@ -125,11 +125,11 @@
   "dataGroups": [],
   "hashTable": {
     "/237.c79080eac29ca61b.js": "3de86b452df0619094a2fb3ef5a5addfcae31597",
-    "/288.18569e4e2004ef27.js": "fcd3ecc988ed25910f50319bbd6425921b60093f",
     "/393.c367bf27e6db5a8f.js": "db5914a82b462aa31849358e60a52f2ab31a3e07",
     "/449.1ef1d402f037abae.js": "66c896016978fefc1d67c2230c377d5f30b05009",
-    "/695.67942f58e363f2e5.js": "6c77f962f3743bca27067abec77131a1463d45b1",
+    "/695.9023f7fe9f487ff5.js": "1e7ad8c031bde5478f772e5516c7746786489ab9",
     "/799.295f169e12a3dcc8.js": "5d17d3ad154b6aa59d443090dc87202e19e56c00",
+    "/811.d2956d1291009732.js": "0a4d018075276846570aa9df07b32603211eef44",
     "/assets/animations/blockchain.json": "316f9c01cd3db0d50fe6bf3baabc6395ad4d0736",
     "/assets/animations/github.json": "9716f459535fa5e3877c07ab7f6224a07e30939e",
     "/assets/favicon/android-chrome-192x192.png": "858678b619246ad473332fcb824c6d74bf23e7fd",
@@ -156,8 +156,8 @@
     "/assets/icons/icon-light-128x128.png": "ca69f8755cc22d8cc02661c58c0a5f6c3507d840",
     "/assets/images/github.png": "4fe0da9bce8123038eeea4b040a3975ba546999f",
     "/assets/images/user.png": "9ecc8b2915de07bdd0a0b50dece3f397d8fc8a17",
-    "/index.html": "1addb42275734ab08e44739773c16b5b962d147b",
-    "/main.6fa3210d2537af48.js": "e067eead52f481725b2e25d508aa5018219c0918",
+    "/index.html": "a5ccb4f1a9c75e3161956c7dd661a24e549ea3ec",
+    "/main.2bc0b6014628c196.js": "25ab93f12fdb10eb9f679b6b990674175d76dab6",
     "/manifest.webmanifest": "56384a1e75005fea501825dc1694c913bc7ebee7",
     "/material-icons-round-latin-400-normal.92dc7ca2f4c591e7.woff": "c41bfee3f01218e18d53f4f4cac00f385ac9fbb1",
     "/material-icons-round-latin-400-normal.b10ec9db5b7fbc74.woff2": "abe05e0641f1050fbe00ef0dbb10c5ea72c26cff",
@@ -218,8 +218,8 @@
     "/roboto-vietnamese-500-normal.7f8c0554ba06f872.woff2": "76f4002863493c93454a9f17424942f321287cba",
     "/roboto-vietnamese-700-normal.72bf832fb8cfcd7e.woff2": "9e6eae8554f8cc2309b2dae2d9fa217e34eed6a4",
     "/roboto-vietnamese-700-normal.82ca662aeeb2bc07.woff": "53bb495cd062f36b3ce88a7d4f0de1b60cd12ece",
-    "/runtime.d68536a1ecc00cc3.js": "e24b48ab5edf7f861d7c788633baf898480ab3c0",
-    "/styles.2202976f7a99bc18.css": "6c0babfa7d775a696167b31743df62af533dd815"
+    "/runtime.b963e1ac1efde3c0.js": "8b12bcd4e87204e0f104055c221d6ac866d60495",
+    "/styles.83d998932747ac9a.css": "0d81012e53a5e0dcc9ebcd4d4ceff27ed7db11b9"
   },
   "navigationUrls": [
     {
