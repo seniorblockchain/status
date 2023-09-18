@@ -1,5 +1,6 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { ProfileService } from './profile.service';
 
 export class HttpError extends Error {
   code: number;
@@ -11,6 +12,7 @@ export class HttpError extends Error {
     this.name = HttpError.name;
     this.url = url;
     this.code = code;
+
   }
 }
 
@@ -26,10 +28,12 @@ export class ApiService {
   endpoints: any;
   dnsendpoints: any;
   errorMessage: any;
+  user: any;
+  userRepos: any;
+
   constructor(
     private http: HttpClient
   ) {
-
   }
 
   async download(url: string, options = {}) {
@@ -101,9 +105,8 @@ export class ApiService {
     localStorage.removeItem(chain + '-url');
     this.baseUrl = this.resetUrl;
   }
-  async loadGithub() {
-    return this.download(`https://status.seniorblockchain.io/github.json`);
-  }
+
+
   async loadChains(chain: string) {
     return this.download(`https://chains.blockcore.net/CHAINS-${chain}.json`);
   }
@@ -142,7 +145,7 @@ export class ApiService {
     return this.downloadRelative('/stats/info');
   }
 
-  async getLastBlock(transactions: boolean = true) {
+  async getLastBlock(_transactions: boolean = true) {
     return this.downloadRelative('/query/block/latest');
   }
 

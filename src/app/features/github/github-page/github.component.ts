@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
+import { ApiService } from 'src/app/core/services/api.service';
+import { ProfileService } from 'src/app/core/services/profile.service';
 import { SetupService } from 'src/app/core/services/setup.service';
 
 @Component({
@@ -11,17 +13,31 @@ import { SetupService } from 'src/app/core/services/setup.service';
 
 })
 export class GithubPageComponent implements OnInit {
-
+  user: any;
+  userRepos: any;
   constructor(
-    public setup: SetupService
+    public api: ApiService,
+    private profileService: ProfileService
   ) {
+   }
 
+
+  findUser () {
+    this.profileService.UpdateUser("block-core");
+
+    this.profileService.getUser().subscribe(user => {
+      console.log(user);
+      this.user = user;
+    });
+
+    this.profileService.getUserRepos().subscribe(repos => {
+      console.log(repos);
+      this.userRepos = repos;
+    })
   }
 
-
- 
-  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit() {
+    this.findUser()
   }
 
 }

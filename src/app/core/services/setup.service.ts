@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
 import { ApiService } from './api.service';
 import { BehaviorSubject } from 'rxjs';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +8,6 @@ import { BehaviorSubject } from 'rxjs';
 export class SetupService {
   data: any;
   chains: any;
-  github: any;
   indexers: any;
   Chain: any;
   Network: any;
@@ -17,6 +16,8 @@ export class SetupService {
 
   private readonly currentChainSubjectBehavior = new BehaviorSubject<string>('BLOCKCORE');
   readonly currentChain$ = this.currentChainSubjectBehavior.asObservable();
+  githubUser: any;
+  githubURepo: any;
 
 
 
@@ -43,10 +44,6 @@ export class SetupService {
     this.indexers = indexers;
   }
 
-  async getGithubData() {
-    const github = await this.api.loadGithub();
-    this.github = github;
-  }
 
   async getChains(chain: string) {
     const data = await this.api.loadChains(chain);

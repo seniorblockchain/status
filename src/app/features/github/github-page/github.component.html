@@ -1,30 +1,31 @@
-<div *ngFor="let org of setup.github.organizations" class="mb-10">
-    <mat-card class="mb-10">
-      <mat-card-header>
-        <img mat-card-avatar src="{{org.avatarUrl}}" alt="{{org.name}}">
+<div class="mb-10">
+  <mat-card class="mb-10">
+    <mat-card-header>
+      <img mat-card-avatar src="{{user.avatar_url}}" alt="{{user.login}}">
 
-        <mat-card-title>{{org.name}}</mat-card-title>
-        <mat-card-subtitle>{{org.blog}}</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          {{org.description}}
-        </p>
-      </mat-card-content>
-      <mat-card-actions align="end" class="gitlogo">
-       </mat-card-actions>
-    </mat-card>
- 
-  <div class="flex-container">
+      <mat-card-title>{{user.login}}</mat-card-title>
+      <mat-card-subtitle>{{user.blog}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{user.bio}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end" class="gitlogo">
+    </mat-card-actions>
+  </mat-card>
 
-    <mat-card *ngFor="let repo of org.repositoris" class="flex-item">
-      
+   <div class="flex-container">
+
+    <mat-card *ngFor="let repo of userRepos" class="flex-item">
+
       <mat-card-header>
-        <img mat-card-avatar src="assets/images/github.png" alt="{{org.name}}">
-       <mat-card-title> {{repo.name}}</mat-card-title>
-      <mat-card-subtitle> <span *ngIf="repo.release.exist">version : <a
-            [href]="'https://github.com/'+org.login+'/'+repo.name+'/releases'">{{repo.release.version}}</a></span>
-      </mat-card-subtitle>
+        <img mat-card-avatar src="assets/images/github.png" alt="{{repo.name}}">
+        <mat-card-title><a [href]="repo.html_url">{{repo.name}}</a></mat-card-title>
+        <mat-card-subtitle> <span >language : 
+          {{repo.language}}
+              </span>
+        </mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
         <p>
@@ -32,7 +33,5 @@
         </p>
       </mat-card-content>
     </mat-card>
-  </div>
+  </div>  
 </div>
-
- 
