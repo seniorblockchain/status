@@ -7,7 +7,7 @@
       "description": "Blockcore is a platform that enables you to build your own blockchains.",
       "avatarUrl": "https://avatars.githubusercontent.com/u/53176002?v=4",
       "blog": "https://www.blockcore.net",
-      "repositoris": [
+      "repositories": [
         {
           "name": "blockcore",
           "description": "Open source .NET Core Bitcoin based blockchain node in C#",
@@ -37,13 +37,13 @@
         },
         {
           "name": "blockcore-coininfo",
-          "description": "JavaScript component for crypto currency specific information.",
+          "description": "JavaScript component for cryptocurrency specific information.",
           "release": {
             "exist": true,
             "version": "5.2.2",
             "prerelease": false
           }
-          ,
+        },
         {
           "name": "blockcore-notes",
           "description": "Notes app for decentralized infrastructures (Nostr and Web5)",
