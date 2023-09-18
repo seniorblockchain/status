@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 
+import { HttpError } from './api.service';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
@@ -16,12 +17,28 @@ export class ProfileService {
     console.log('service is now ready');
   }
 
-  getUser() {
-    return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clientId + "&client_secret=" + this.clientSecret);
+  async download(url: string, options = {}) {
+    const response = await fetch(url, options);
+    const json = await response.json();
+
+    if (response.status !== 200) {
+      if (json && json.status) {
+        throw new HttpError(json.status, url, JSON.stringify(json));
+      } else {
+        throw new HttpError(response.status, url, response.statusText);
+      }
+    }
+
+    return json;
   }
 
-  getUserRepos() {
-    return this.http.get('https://api.github.com/users/' + this.username + '/repos'+ "?client_id=" + this.clientId + "&client_secret=" + this.clientSecret +"&per_page=1000");
+  
+  async getUser() {
+    return await this.download("https://api.github.com/users/" + this.username + "?client_id=" + this.clientId + "&client_secret=" + this.clientSecret);
+  }
+
+  async getUserRepos() {
+    return await this.download('https://api.github.com/users/' + this.username + '/repos'+ "?client_id=" + this.clientId + "&client_secret=" + this.clientSecret +"&per_page=1000");
   }
 
   searchrepos() {

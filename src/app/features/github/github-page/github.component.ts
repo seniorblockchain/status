@@ -22,18 +22,13 @@ export class GithubPageComponent implements OnInit {
    }
 
 
-  findUser () {
+  async findUser () {
     this.profileService.UpdateUser("block-core");
 
-    this.profileService.getUser().subscribe(user => {
-      console.log(user);
-      this.user = user;
-    });
+  this.user = await this.profileService.getUser();
 
-    this.profileService.getUserRepos().subscribe(repos => {
-      console.log(repos);
-      this.userRepos = repos;
-    })
+  this.userRepos = await this.profileService.getUserRepos();
+  
   }
 
   ngOnInit() {

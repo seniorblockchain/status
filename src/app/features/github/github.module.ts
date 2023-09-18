@@ -9,7 +9,7 @@ import { SharedModule } from '../../shared/shared.module';
 @NgModule({
   declarations: [GithubPageComponent],
   imports: [
-     CommonModule,
+    CommonModule,
     SharedModule,
     GithubRoutingModule,
     FlexLayoutModule
